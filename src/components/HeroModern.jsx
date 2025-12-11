@@ -28,7 +28,7 @@ export default function HeroModern() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-20"
     >
       {/* 3D Background */}
       <Scene3D />
@@ -37,7 +37,7 @@ export default function HeroModern() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-darker/50 to-darker z-10" />
       
       {/* Content */}
-      <div className="relative z-20 w-full py-20" style={{ maxWidth: '1600px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: 'max(32px, calc((100vw - 1600px) / 2))', paddingRight: 'max(32px, calc((100vw - 1600px) / 2))' }}>
+      <div className="relative z-20 w-full py-12 md:py-20" style={{ maxWidth: '1600px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: 'max(32px, calc((100vw - 1600px) / 2))', paddingRight: 'max(32px, calc((100vw - 1600px) / 2))' }}>
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -55,8 +55,8 @@ export default function HeroModern() {
           {/* Name */}
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold"
-            style={{ marginBottom: '32px' }}
+            className="text-4xl md:text-7xl lg:text-8xl font-bold"
+            style={{ marginBottom: '24px' }}
           >
             <span className="text-gradient">Ayomide Bobani</span>
           </motion.h1>
@@ -64,8 +64,8 @@ export default function HeroModern() {
           {/* Title */}
           <motion.h2
             variants={itemVariants}
-            className="text-2xl md:text-4xl lg:text-5xl font-semibold text-slate-300"
-            style={{ marginBottom: '40px' }}
+            className="text-xl md:text-4xl lg:text-5xl font-semibold text-slate-300"
+            style={{ marginBottom: '32px' }}
           >
            Full Stack Developer
           </motion.h2>
@@ -73,8 +73,8 @@ export default function HeroModern() {
           {/* Description */}
           <motion.p
             variants={itemVariants}
-            className="text-lg md:text-xl text-slate-400 leading-relaxed"
-            style={{ maxWidth: '672px', marginLeft: 'auto', marginRight: 'auto', marginBottom: '60px' }}
+            className="text-base md:text-xl text-slate-400 leading-relaxed"
+            style={{ maxWidth: '672px', marginLeft: 'auto', marginRight: 'auto', marginBottom: '48px' }}
           >
             Crafting scalable, high-performance web applications with modern technologies.
             4+ years building scalable systems (Web + Mobile) with React, MERN, Next.js, NestJS, Three.js, MVC patterns, and React Native and more.
@@ -83,18 +83,18 @@ export default function HeroModern() {
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-wrap gap-6 justify-center"
-            style={{ marginBottom: '80px' }}
+            className="flex flex-wrap gap-4 md:gap-6 justify-center"
+            style={{ marginBottom: '60px' }}
           >
             <a
               href="#projects"
-              className="px-8 py-4 bg-primary hover:bg-primary/80 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
+              className="px-6 md:px-8 py-3 md:py-4 bg-primary hover:bg-primary/80 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
             >
               View My Work
             </a>
             <a
               href="#contact"
-              className="px-8 py-4 glass-effect hover:bg-white/10 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+              className="px-6 md:px-8 py-3 md:py-4 glass-effect hover:bg-white/10 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
             >
               Get In Touch
             </a>
@@ -103,7 +103,7 @@ export default function HeroModern() {
           {/* Social Links */}
           <motion.div
             variants={itemVariants}
-            className="flex gap-8 justify-center"
+            className="flex gap-6 md:gap-8 justify-center"
           >
             {[
               { icon: FaGithub, href: 'https://www.linkedin.com/in/ayomide-bobani-a76247360/e', label: 'GitHub' },
