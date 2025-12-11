@@ -1,94 +1,21 @@
-/* App.css */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Minimal custom styles - most styling is done with Tailwind */
+
+.App {
+  min-height: 200vh;
 }
 
-:root {
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --dark: #343a40;
-  --light: #f8f9fa;
-  --success: #28a745;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --transition: all 0.3s ease;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.section {
-  padding: 80px 0;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 2.5em;
-  color: var(--dark);
-  position: relative;
-}
-
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: var(--primary);
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 30px;
-  background: var(--primary);
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: var(--transition);
-  font-weight: 500;
-}
-
-.btn:hover {
-  background: #0056b3;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
-}
-
-.btn-outline {
-  background: transparent;
-  border: 2px solid var(--primary);
-  color: var(--primary);
-}
-
-.btn-outline:hover {
-  background: var(--primary);
-  color: white;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .section {
-    padding: 60px 0;
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  
-  .section-title {
-    font-size: 2em;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
 }
