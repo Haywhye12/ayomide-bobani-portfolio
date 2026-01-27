@@ -3,11 +3,12 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import {
   FaReact, FaNodeJs, FaDocker, FaAws, FaPython, FaGitAlt,
-  FaDatabase, FaServer
+  FaDatabase, FaServer, FaPhp
 } from 'react-icons/fa';
 import {
   SiTypescript, SiNextdotjs, SiMongodb, SiPostgresql, SiRedis,
-  SiGraphql, SiKubernetes, SiTailwindcss, SiExpress, SiThreedotjs
+  SiGraphql, SiKubernetes, SiTailwindcss, SiExpress, SiThreedotjs,
+  SiSupabase, SiFirebase
 } from 'react-icons/si';
 
 export default function SkillsModern() {
@@ -29,18 +30,21 @@ export default function SkillsModern() {
       title: 'Backend',
       skills: [
         { name: 'Node.js', icon: FaNodeJs, level: 93, color: '#339933' },
-        { name: 'Express', icon: SiExpress, level: 90, color: '#000000' },
+        { name: 'Express', icon: SiExpress, level: 100, color: '#000000' },
         { name: 'Python', icon: FaPython, level: 88, color: '#3776AB' },
+        { name: 'PHP', icon: FaPhp, level: 85, color: '#777BB4' },
         { name: 'GraphQL', icon: SiGraphql, level: 87, color: '#E10098' },
+        { name: 'JavaScript', icon: SiJavascript, level: 95, color: '#3178C6' }
       ],
     },
     {
-      title: 'Database',
+      title: 'Database & BaaS',
       skills: [
         { name: 'MongoDB', icon: SiMongodb, level: 90, color: '#47A248' },
         { name: 'PostgreSQL', icon: SiPostgresql, level: 88, color: '#4169E1' },
+        { name: 'Supabase', icon: SiSupabase, level: 87, color: '#3ECF8E' },
+        { name: 'Firebase', icon: SiFirebase, level: 89, color: '#FFCA28' },
         { name: 'Redis', icon: SiRedis, level: 85, color: '#DC382D' },
-        { name: 'SQL', icon: FaDatabase, level: 90, color: '#F29111' },
       ],
     },
     {
@@ -163,7 +167,7 @@ export default function SkillsModern() {
           <p className="text-slate-400" style={{ marginBottom: '24px', fontSize: '16px' }}>Also experienced with:</p>
           <div className="flex flex-wrap gap-4 justify-center">
             {['REST APIs', 'WebSockets', 'CI/CD', 'Microservices', 'Jest', 'Cypress', 
-              'Webpack', 'Vite', 'GSAP', 'Framer Motion', 'Prisma', 'Serverless'].map((tech, index) => (
+              'Webpack', 'Vite', 'GSAP', 'Framer Motion', 'Prisma', 'Serverless', 'Laravel', 'MySQL'].map((tech, index) => (
               <motion.span
                 key={index}
                 initial={{ opacity: 0, scale: 0.8 }}
