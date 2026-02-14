@@ -8,7 +8,7 @@ import {
 import {
   SiTypescript, SiNextdotjs, SiMongodb, SiPostgresql, SiRedis,
   SiGraphql, SiKubernetes, SiTailwindcss, SiExpress, SiThreedotjs,
-  SiSupabase, SiFirebase
+  SiSupabase, SiFirebase, SiJavascript
 } from 'react-icons/si';
 
 export default function SkillsModern() {
@@ -42,6 +42,7 @@ export default function SkillsModern() {
       skills: [
         { name: 'MongoDB', icon: SiMongodb, level: 90, color: '#47A248' },
         { name: 'PostgreSQL', icon: SiPostgresql, level: 88, color: '#4169E1' },
+        { name: 'SQL', icon: FaDatabase, level: 90, color: '#F29111' },
         { name: 'Supabase', icon: SiSupabase, level: 87, color: '#3ECF8E' },
         { name: 'Firebase', icon: SiFirebase, level: 89, color: '#FFCA28' },
         { name: 'Redis', icon: SiRedis, level: 85, color: '#DC382D' },
