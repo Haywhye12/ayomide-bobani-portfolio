@@ -3,12 +3,12 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import {
   FaReact, FaNodeJs, FaDocker, FaAws, FaPython, FaGitAlt,
-  FaDatabase, FaServer, FaPhp
+  FaDatabase, FaServer, FaPhp, FaHtml5, FaCss3Alt, FaBootstrap
 } from 'react-icons/fa';
 import {
   SiTypescript, SiNextdotjs, SiMongodb, SiPostgresql, SiRedis,
   SiGraphql, SiKubernetes, SiTailwindcss, SiExpress, SiThreedotjs,
-  SiSupabase, SiFirebase, SiJavascript
+  SiSupabase, SiFirebase, SiJavascript, SiMui, SiFlutter
 } from 'react-icons/si';
 
 export default function SkillsModern() {
@@ -20,10 +20,17 @@ export default function SkillsModern() {
       title: 'Frontend',
       skills: [
         { name: 'React', icon: FaReact, level: 95, color: '#61DAFB' },
+        { name: 'React Native', icon: FaReact, level: 90, color: '#61DAFB' },
         { name: 'Next.js', icon: SiNextdotjs, level: 90, color: '#000000' },
         { name: 'TypeScript', icon: SiTypescript, level: 92, color: '#3178C6' },
-        { name: 'Three.js', icon: SiThreedotjs, level: 85, color: '#000000' },
+        { name: 'JavaScript', icon: SiJavascript, level: 95, color: '#F7DF1E' },
+        { name: 'HTML5', icon: FaHtml5, level: 98, color: '#E34F26' },
+        { name: 'CSS3', icon: FaCss3Alt, level: 95, color: '#1572B6' },
         { name: 'Tailwind', icon: SiTailwindcss, level: 95, color: '#06B6D4' },
+        { name: 'Material UI', icon: SiMui, level: 88, color: '#007FFF' },
+        { name: 'Bootstrap', icon: FaBootstrap, level: 90, color: '#7952B3' },
+        { name: 'Three.js', icon: SiThreedotjs, level: 85, color: '#000000' },
+        { name: 'Flutter', icon: SiFlutter, level: 82, color: '#02569B' },
       ],
     },
     {
@@ -34,7 +41,6 @@ export default function SkillsModern() {
         { name: 'Python', icon: FaPython, level: 88, color: '#3776AB' },
         { name: 'PHP', icon: FaPhp, level: 85, color: '#777BB4' },
         { name: 'GraphQL', icon: SiGraphql, level: 87, color: '#E10098' },
-        { name: 'JavaScript', icon: SiJavascript, level: 95, color: '#3178C6' }
       ],
     },
     {
