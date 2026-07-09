@@ -8,7 +8,8 @@ import {
 import {
   SiTypescript, SiNextdotjs, SiMongodb, SiPostgresql, SiRedis,
   SiGraphql, SiKubernetes, SiTailwindcss, SiExpress, SiThreedotjs,
-  SiSupabase, SiFirebase, SiJavascript, SiMui, SiFlutter
+  SiSupabase, SiFirebase, SiJavascript, SiMui, SiFlutter,
+  SiLaravel, SiCodeigniter
 } from 'react-icons/si';
 
 export default function SkillsModern() {
@@ -40,6 +41,8 @@ export default function SkillsModern() {
         { name: 'Express', icon: SiExpress, level: 100, color: '#000000' },
         { name: 'Python', icon: FaPython, level: 88, color: '#3776AB' },
         { name: 'PHP', icon: FaPhp, level: 85, color: '#777BB4' },
+        { name: 'Laravel', icon: SiLaravel, level: 90, color: '#FF2D20' },
+        { name: 'CodeIgniter', icon: SiCodeigniter, level: 85, color: '#EE4323' },
         { name: 'GraphQL', icon: SiGraphql, level: 87, color: '#E10098' },
       ],
     },
@@ -174,7 +177,7 @@ export default function SkillsModern() {
           <p className="text-slate-400" style={{ marginBottom: '24px', fontSize: '16px' }}>Also experienced with:</p>
           <div className="flex flex-wrap gap-4 justify-center">
             {['REST APIs', 'WebSockets', 'CI/CD', 'Microservices', 'Jest', 'Cypress', 
-              'Webpack', 'Vite', 'GSAP', 'Framer Motion', 'Prisma', 'Serverless', 'Laravel', 'MySQL'].map((tech, index) => (
+              'Webpack', 'Vite', 'GSAP', 'Framer Motion', 'Prisma', 'Serverless', 'MySQL'].map((tech, index) => (
               <motion.span
                 key={index}
                 initial={{ opacity: 0, scale: 0.8 }}
