@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function ContactModern() {
   const ref = useRef(null);
@@ -23,7 +23,7 @@ export default function ContactModern() {
     {
       icon: FaPhone,
       title: 'Phone',
-      value: '+234 (903) 900-7081',
+      value: '+234 903 900 7081',
       link: 'tel:+2349039007081',
     },
     {
@@ -37,7 +37,6 @@ export default function ContactModern() {
   const socialLinks = [
     { icon: FaLinkedin, href: 'https://www.linkedin.com/in/ayomide-bobani-a76247360/', color: '#0077B5' },
     { icon: FaGithub, href: 'https://github.com/haywhye12', color: '#333' },
-    { icon: FaTwitter, href: 'https://twitter.com/yourusername', color: '#1DA1F2' },
   ];
 
   const handleChange = (e) => {

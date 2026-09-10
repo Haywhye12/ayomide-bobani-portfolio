@@ -8,40 +8,63 @@ export default function ExperienceModern() {
 
   const experiences = [
     {
-      title: 'Full Stack Developer',
-      company: 'Techbox Lab',
-      period: '2024 - Present',
-      description: 'Leading development of enterprise-scale applications, architecting microservices, and mentoring a team of 5 developers.',
+      title: 'Software Developer',
+      company: 'Prestige Assurance Plc',
+      location: 'Lagos, Nigeria',
+      period: 'June 2026 – Present',
+      description: 'Developing and maintaining responsive web and mobile applications to support business operations and customer-facing services, while contributing to NDPR compliance as a Data Protection Officer.',
       achievements: [
-        'Reduced application load time by 60% through optimization',
-        'Implemented CI/CD pipeline reducing deployment time by 80%',
-        'Led migration to cloud infrastructure (AWS) serving 1M+ users',
+        'Build and maintain responsive web apps using React, Next.js, and TypeScript.',
+        'Develop cross-platform mobile applications for iOS and Android using React Native and Flutter.',
+        'Design, develop, and integrate RESTful APIs and third-party services.',
+        'Implement secure development practices and contribute to NDPR compliance as a Data Protection Officer.',
+        'Work directly with the Head of IT on development processes, technologies, and tooling.',
       ],
-      technologies: ['React', 'Node.js', 'AWS', 'Docker', 'Kubernetes'],
+      technologies: ['React', 'Next.js', 'TypeScript', 'React Native', 'Flutter', 'REST APIs'],
     },
     {
-      title: 'Full Stack Developer',
-      company: 'Syllabux Solutions.',
-      period: '2023',
-      description: 'Developed and maintained multiple client projects, focusing on scalable web applications and API development.',
+      title: 'Chief Technology Officer',
+      company: 'DevGeeks Tech',
+      location: 'Remote',
+      period: '2024 – Present',
+      description: 'Providing technical leadership and overseeing the full software development lifecycle for client projects, from architecture through delivery.',
       achievements: [
-        'Built real-time analytics dashboard processing 100k+ events/day',
-        'Developed RESTful APIs serving 50+ client applications',
-        'Improved code quality by implementing automated testing (95% coverage)',
+        'Translate client requirements into scalable web and mobile technology solutions.',
+        'Provide technical consulting on application architecture, infrastructure optimisation, and IT strategy.',
+        'Establish and promote secure coding practices, data protection compliance, and risk management.',
+        'Lead distributed development teams and drive effective Agile collaboration.',
+        'Advise stakeholders on technology decisions and infrastructure improvements.',
       ],
-      technologies: ['React', 'Express', 'MongoDB', 'Redis', 'GraphQL'],
+      technologies: ['React', 'Next.js', 'Node.js', 'Docker', 'AWS', 'Agile'],
     },
     {
-      title: 'Frontend Developer',
-      company: 'Creative Web Agency',
-      period: '2022 - 2023',
-      description: 'Created responsive, user-friendly interfaces for various clients across different industries.',
+      title: 'Full-Stack Developer',
+      company: 'Techbox Labs',
+      location: 'Lagos, Nigeria',
+      period: '2024 – 2026',
+      description: 'Led end-to-end development of responsive web and mobile applications, designing APIs, mentoring junior developers, and enforcing secure coding standards.',
       achievements: [
-        'Delivered 20+ responsive websites with 100% client satisfaction',
-        'Implemented modern UI/UX designs with pixel-perfect accuracy',
-        'Optimized websites achieving 95+ Google Lighthouse scores',
+        'Led development using React, TypeScript, Next.js, Node.js, Express.js, and Apollo GraphQL.',
+        'Designed and implemented REST and GraphQL APIs and authentication systems.',
+        'Worked with MongoDB, PostgreSQL, and MySQL for application data management.',
+        'Performed code reviews, enforced secure coding practices, and maintained technical documentation.',
+        'Mentored junior developers and contributed to technical decision-making.',
       ],
-      technologies: ['React', 'Vue.js', 'SASS', 'Webpack', 'REST APIs'],
+      technologies: ['React', 'TypeScript', 'Next.js', 'Node.js', 'GraphQL', 'MongoDB', 'PostgreSQL'],
+    },
+    {
+      title: 'Software Developer',
+      company: 'Syllabus Solution',
+      location: 'Lagos, Nigeria',
+      period: '2021 – 2023',
+      description: 'Progressed from intern to software developer, building responsive frontend applications, developing backend API endpoints, and collaborating in Agile teams.',
+      achievements: [
+        'Developed responsive frontend applications using HTML, CSS, JavaScript, jQuery, and React.js.',
+        'Developed backend API endpoints and performed database operations.',
+        'Integrated third-party services into applications.',
+        'Participated in Agile workflows including daily stand-ups, sprint planning, and code reviews.',
+      ],
+      technologies: ['React', 'HTML5', 'CSS3', 'JavaScript', 'jQuery', 'REST APIs'],
     },
   ];
 
@@ -93,6 +116,8 @@ export default function ExperienceModern() {
                       <div className="flex items-center gap-2 text-slate-300">
                         <FaBriefcase className="text-primary" />
                         <span className="font-medium">{exp.company}</span>
+                        <span className="text-slate-500">·</span>
+                        <span className="text-slate-400 text-sm">{exp.location}</span>
                       </div>
                     </div>
                     <div className="flex items-center gap-2 text-slate-400 mt-2 md:mt-0">

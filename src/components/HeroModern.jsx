@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Scene3D from './Scene3D';
 
 export default function HeroModern() {
@@ -67,7 +67,7 @@ export default function HeroModern() {
             className="text-xl md:text-4xl lg:text-5xl font-semibold text-slate-300"
             style={{ marginBottom: '32px' }}
           >
-           Full Stack Developer
+            Software Developer | Full-Stack Engineer
           </motion.h2>
 
           {/* Description */}
@@ -76,8 +76,8 @@ export default function HeroModern() {
             className="text-base md:text-xl text-slate-400 leading-relaxed"
             style={{ maxWidth: '672px', marginLeft: 'auto', marginRight: 'auto', marginBottom: '48px' }}
           >
-            Crafting scalable, high-performance web applications with modern technologies.
-            4+ years building scalable systems (Web + Mobile) with React, MERN, Next.js, NestJS, Three.js, MVC patterns, and React Native and more.
+            5+ years designing, building, and shipping scalable web and mobile applications.
+            Specialising in React, Next.js, TypeScript, Node.js, React Native, Flutter, and AI integration.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -106,9 +106,8 @@ export default function HeroModern() {
             className="flex gap-6 md:gap-8 justify-center"
           >
             {[
-              { icon: FaGithub, href: 'https://www.linkedin.com/in/ayomide-bobani-a76247360/e', label: 'GitHub' },
-              { icon: FaLinkedin, href: 'https://linkedin.com/in/haywhye12', label: 'LinkedIn' },
-              { icon: FaTwitter, href: 'https://twitter.com/yourusername', label: 'Twitter' },
+              { icon: FaGithub, href: 'https://github.com/Haywhyte12', label: 'GitHub' },
+              { icon: FaLinkedin, href: 'https://www.linkedin.com/in/ayomide-bobani-a76247360/', label: 'LinkedIn' },
               { icon: FaEnvelope, href: '#contact', label: 'Email' },
             ].map((social, index) => (
               <a

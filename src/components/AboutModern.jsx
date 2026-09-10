@@ -8,28 +8,28 @@ export default function AboutModern() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const stats = [
-    { icon: FaCode, value: '3+', label: 'Years Experience' },
+    { icon: FaCode, value: '5+', label: 'Years Experience' },
     { icon: FaRocket, value: '10+', label: 'Projects Completed' },
-    { icon: FaUsers, value: '10+', label: 'Happy Clients' },
-    { icon: FaAward, value: '5+', label: 'Awards Won' },
+    { icon: FaUsers, value: '3+', label: 'Companies' },
+    { icon: FaAward, value: 'CTO', label: 'Leadership Role' },
   ];
 
   const highlights = [
     {
       title: 'Full-Stack Expertise',
-      description: 'Proficient in both frontend and backend technologies, delivering end-to-end solutions.',
+      description: 'End-to-end development across React, Next.js, Node.js, Express, GraphQL, React Native, and Flutter.',
     },
     {
-      title: 'Modern Architecture',
-      description: 'Experienced in microservices, serverless, and cloud-native application design.',
+      title: 'AI & Emerging Tech',
+      description: 'Hands-on experience integrating AI/ML models, blockchain smart contracts, and real-time services into production apps.',
     },
     {
-      title: 'Performance Focused',
-      description: 'Optimizing applications for speed, scalability, and exceptional user experience.',
+      title: 'Security & Compliance',
+      description: 'Experienced in secure coding practices, NDPR compliance, and serving as a Data Protection Officer.',
     },
     {
-      title: 'Team Leadership',
-      description: 'Led development teams, mentored junior developers, and drove technical decisions.',
+      title: 'Technical Leadership',
+      description: 'CTO at DevGeeks Tech, leading distributed teams, mentoring developers, and driving IT strategy and governance.',
     },
   ];
 
@@ -85,18 +85,17 @@ export default function AboutModern() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <p className="text-slate-300 text-lg leading-relaxed" style={{ marginBottom: '32px' }}>
-              I'm a <span className="text-primary font-semibold">Full Stack Developer</span> with 
-              over 4 years of experience building scalable web applications and leading development teams. 
-              My passion lies in creating elegant solutions to complex problems using cutting-edge technologies.
+              I'm a <span className="text-primary font-semibold">Software Developer & Full-Stack Engineer</span> with 
+              over 5 years of experience designing, developing, and maintaining web and mobile applications. 
+              I specialise in building scalable, user-focused products that translate business requirements into reliable digital experiences.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed" style={{ marginBottom: '32px' }}>
-              I specialize in the <span className="text-secondary font-semibold">MERN stack</span>, modern 
-              frontend frameworks, and cloud architecture. Recently, I've been exploring 3D web experiences 
-              with Three.js and WebGL to push the boundaries of what's possible on the web.
+              My stack spans <span className="text-secondary font-semibold">React, Next.js, TypeScript, Node.js, Express, GraphQL, React Native, and Flutter</span> — 
+              backed by solid API development, database management, cloud deployment, and application security skills.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed">
-              When I'm not coding, you'll find me contributing to open-source projects, writing technical 
-              articles, or mentoring aspiring developers in the community.
+              Beyond coding, I serve as <span className="text-primary font-semibold">CTO at DevGeeks Tech</span> and as a Data Protection Officer, 
+              contributing to NDPR compliance, IT governance, risk management, and mentoring the next generation of developers.
             </p>
           </motion.div>
         </div>

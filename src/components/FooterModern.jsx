@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 export default function FooterModern() {
   const currentYear = new Date().getFullYear();
@@ -12,9 +12,8 @@ export default function FooterModern() {
   ];
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://www.linkedin.com/in/ayomide-bobani-a76247360/' },
-    { icon: FaLinkedin, href: 'https://linkedin.com/in/haywhye12' },
-    { icon: FaTwitter, href: 'https://twitter.com/yourusername' },
+    { icon: FaGithub, href: 'https://github.com/Haywhyte12' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/ayomide-bobani-a76247360/' },
     { icon: FaEnvelope, href: 'mailto:ayomidebobani@gmail.com' },
   ];
 
@@ -28,7 +27,7 @@ export default function FooterModern() {
               Ayomide Bobani
             </h3>
             <p className="text-slate-400 leading-relaxed" style={{ marginBottom: '20px' }}>
-              Senior Full Stack Developer crafting exceptional digital experiences with modern technologies.
+              Software Developer & Full-Stack Engineer building scalable web and mobile applications.
             </p>
           </div>
 
