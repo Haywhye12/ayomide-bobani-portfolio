@@ -9,7 +9,7 @@ import {
   SiTypescript, SiNextdotjs, SiMongodb, SiPostgresql, SiRedis,
   SiGraphql, SiKubernetes, SiTailwindcss, SiExpress, SiThreedotjs,
   SiSupabase, SiFirebase, SiJavascript, SiMui, SiFlutter,
-  SiLaravel, SiCodeigniter
+  SiLaravel, SiCodeigniter, SiGithubactions
 } from 'react-icons/si';
 
 export default function SkillsModern() {
@@ -63,6 +63,7 @@ export default function SkillsModern() {
         { name: 'AWS', icon: FaAws, level: 87, color: '#FF9900' },
         { name: 'Docker', icon: FaDocker, level: 90, color: '#2496ED' },
         { name: 'Kubernetes', icon: SiKubernetes, level: 82, color: '#326CE5' },
+        { name: 'CI/CD', icon: SiGithubactions, level: 88, color: '#2088FF' },
         { name: 'Git', icon: FaGitAlt, level: 95, color: '#F05032' },
       ],
     },

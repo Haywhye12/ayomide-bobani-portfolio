@@ -9,27 +9,35 @@ export default function AboutModern() {
 
   const stats = [
     { icon: FaCode, value: '5+', label: 'Years Experience' },
-    { icon: FaRocket, value: '10+', label: 'Projects Completed' },
-    { icon: FaUsers, value: '3+', label: 'Companies' },
+    { icon: FaRocket, value: '15+', label: 'Projects Delivered' },
+    { icon: FaUsers, value: '8+', label: 'Team Size Led' },
     { icon: FaAward, value: 'CTO', label: 'Leadership Role' },
   ];
 
   const highlights = [
     {
       title: 'Full-Stack Expertise',
-      description: 'End-to-end development across React, Next.js, Node.js, Express, GraphQL, React Native, and Flutter.',
+      description: 'End-to-end development across React, Next.js, Node.js, Express, GraphQL, React Native, and Flutter — from architecture through deployment.',
+    },
+    {
+      title: 'Cloud & DevOps',
+      description: 'Experienced with AWS, Docker, Kubernetes, and CI/CD pipelines. Designs scalable cloud infrastructure and automates build, test, and deployment workflows.',
+    },
+    {
+      title: 'Architecture Leadership',
+      description: 'Defines system architecture for enterprise-scale projects — evaluating microservices, serverless, and monolithic patterns based on scale, team size, and business constraints.',
     },
     {
       title: 'AI & Emerging Tech',
-      description: 'Hands-on experience integrating AI/ML models, blockchain smart contracts, and real-time services into production apps.',
+      description: 'Hands-on experience integrating AI/ML models, blockchain smart contracts, and real-time services into production customer-facing applications.',
     },
     {
       title: 'Security & Compliance',
-      description: 'Experienced in secure coding practices, NDPR compliance, and serving as a Data Protection Officer.',
+      description: 'Experienced in secure coding practices, NDPR compliance, and serving as a Data Protection Officer across enterprise environments.',
     },
     {
       title: 'Technical Leadership',
-      description: 'CTO at DevGeeks Tech, leading distributed teams, mentoring developers, and driving IT strategy and governance.',
+      description: 'CTO at DevGeeks Tech, leading distributed teams of up to 8 engineers, mentoring developers, and driving IT strategy, governance, and stakeholder communication.',
     },
   ];
 
@@ -91,7 +99,7 @@ export default function AboutModern() {
             </p>
             <p className="text-slate-300 text-lg leading-relaxed" style={{ marginBottom: '32px' }}>
               My stack spans <span className="text-secondary font-semibold">React, Next.js, TypeScript, Node.js, Express, GraphQL, React Native, and Flutter</span> — 
-              backed by solid API development, database management, cloud deployment, and application security skills.
+              backed by strong architecture skills, cloud deployment on AWS, Docker/Kubernetes containerisation, CI/CD pipeline setup, and application security.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed">
               Beyond coding, I serve as <span className="text-primary font-semibold">CTO at DevGeeks Tech</span> and as a Data Protection Officer, 
@@ -105,8 +113,8 @@ export default function AboutModern() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
-          style={{ marginTop: '60px', marginBottom: '100px', maxWidth: '1000px', marginLeft: 'auto', marginRight: 'auto' }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          style={{ marginTop: '60px', marginBottom: '100px', maxWidth: '1200px', marginLeft: 'auto', marginRight: 'auto' }}
         >
           {highlights.map((highlight, index) => (
             <motion.div
