@@ -27,7 +27,7 @@ export default function FooterModern() {
               Ayomide Bobani
             </h3>
             <p className="text-slate-400 leading-relaxed" style={{ marginBottom: '20px' }}>
-              Software Developer & Full-Stack Engineer building scalable web and mobile applications.
+              Software Developer & Full-Stack Engineer building scalable web, mobile, and desktop applications.
             </p>
           </div>
 

@@ -9,10 +9,9 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1>Ayomide Bobani</h1>
-            <h2>Full Stack Developer</h2>
+            <h2>Senior Software Engineer & Systems Architect</h2>
             <p>
-              I create digital experiences that are fast, scalable, and user-friendly. 
-              Specialized in React, Node.js, and modern web technologies.
+              Designing, building, and scaling high-performance web, mobile, and desktop solutions across React, Node.js, .NET/C#, Rust, Electron, and Cloud ecosystems.
             </p>
             <div className="hero-buttons">
               <a href="#contact" className="btn">Get In Touch</a>

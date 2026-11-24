@@ -170,7 +170,7 @@ export default function ProjectsModern() {
             <span className="text-gradient">Featured Projects</span>
           </h2>
           <p className="text-slate-400 text-lg" style={{ maxWidth: '512px', marginLeft: 'auto', marginRight: 'auto' }}>
-            A showcase of real-world projects spanning full-stack web, mobile, AI, and blockchain development
+            A showcase of real-world projects spanning full-stack web, mobile, desktop, AI, and blockchain development
           </p>
         </motion.div>
 

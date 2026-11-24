@@ -17,7 +17,7 @@ export default function AboutModern() {
   const highlights = [
     {
       title: 'Full-Stack Expertise',
-      description: 'End-to-end development across React, Next.js, Node.js, Express, GraphQL, React Native, and Flutter — from architecture through deployment.',
+      description: 'End-to-end development across React, Next.js, Node.js, Express, GraphQL, React Native, Flutter, and Electron — from architecture through deployment.',
     },
     {
       title: 'Cloud & DevOps',
@@ -37,7 +37,7 @@ export default function AboutModern() {
     },
     {
       title: 'Technical Leadership',
-      description: 'CTO at DevGeeks Tech, leading distributed teams of up to 8 engineers, mentoring developers, and driving IT strategy, governance, and stakeholder communication.',
+      description: 'CTO at DevGeeks Nexus Ltd, leading distributed teams of up to 8 engineers, mentoring developers, and driving IT strategy, governance, and stakeholder communication.',
     },
   ];
 
@@ -94,15 +94,15 @@ export default function AboutModern() {
           >
             <p className="text-slate-300 text-lg leading-relaxed" style={{ marginBottom: '32px' }}>
               I'm a <span className="text-primary font-semibold">Software Developer & Full-Stack Engineer</span> with 
-              over 5 years of experience designing, developing, and maintaining web and mobile applications. 
+              over 5 years of experience designing, developing, and maintaining web, mobile, and desktop applications. 
               I specialise in building scalable, user-focused products that translate business requirements into reliable digital experiences.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed" style={{ marginBottom: '32px' }}>
-              My stack spans <span className="text-secondary font-semibold">React, Next.js, TypeScript, Node.js, Express, GraphQL, React Native, and Flutter</span> — 
+              My stack spans <span className="text-secondary font-semibold">React, Next.js, TypeScript, Node.js, Express, GraphQL, React Native, Flutter, and Electron</span> — 
               backed by strong architecture skills, cloud deployment on AWS, Docker/Kubernetes containerisation, CI/CD pipeline setup, and application security.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed">
-              Beyond coding, I serve as <span className="text-primary font-semibold">CTO at DevGeeks Tech</span> and as a Data Protection Officer, 
+              Beyond coding, I serve as <span className="text-primary font-semibold">CTO at <a href="https://devgeeksnexus.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">DevGeeks Nexus Ltd</a></span> and as a Data Protection Officer, 
               contributing to NDPR compliance, IT governance, risk management, and mentoring the next generation of developers.
             </p>
           </motion.div>

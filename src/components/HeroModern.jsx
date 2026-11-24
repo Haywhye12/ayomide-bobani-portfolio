@@ -67,17 +67,16 @@ export default function HeroModern() {
             className="text-xl md:text-4xl lg:text-5xl font-semibold text-slate-300"
             style={{ marginBottom: '32px' }}
           >
-            Software Developer | Full-Stack Engineer
+            Senior Software Engineer & Systems Architect
           </motion.h2>
 
           {/* Description */}
           <motion.p
             variants={itemVariants}
             className="text-base md:text-xl text-slate-400 leading-relaxed"
-            style={{ maxWidth: '672px', marginLeft: 'auto', marginRight: 'auto', marginBottom: '48px' }}
+            style={{ maxWidth: '768px', marginLeft: 'auto', marginRight: 'auto', marginBottom: '48px' }}
           >
-            5+ years designing, building, and shipping scalable web and mobile applications.
-            Specialising in React, Next.js, TypeScript, Node.js, React Native, Flutter, and AI integration.
+            Designing, building, and scaling high-performance web, mobile, and desktop solutions across React, Node.js, .NET/C#, Rust, Electron, and Cloud ecosystems.
           </motion.p>
 
           {/* CTA Buttons */}

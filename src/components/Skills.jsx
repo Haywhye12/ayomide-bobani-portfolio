@@ -13,6 +13,7 @@ const Skills = () => {
         { name: "TypeScript", level: 85 },
         { name: "React.js", level: 90 },
         { name: "Next.js", level: 85 },
+        { name: "Electron", level: 88 },
         { name: "jQuery", level: 80 }
       ]
     },
@@ -21,6 +22,9 @@ const Skills = () => {
       skills: [
         { name: "Node.js", level: 88 },
         { name: "Express.js", level: 85 },
+        { name: "C#", level: 86 },
+        { name: ".NET", level: 85 },
+        { name: "Rust", level: 82 },
         { name: "PHP", level: 85 },
         { name: "Laravel", level: 88 },
         { name: "CodeIgniter", level: 82 },

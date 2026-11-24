@@ -12,27 +12,28 @@ export default function ExperienceModern() {
       company: 'Prestige Assurance Plc',
       location: 'Lagos, Nigeria',
       period: 'June 2026 – Present',
-      description: 'Building and maintaining enterprise-grade web and mobile applications for a publicly listed insurance company, supporting internal business operations and customer-facing insurance services.',
+      description: 'Building and maintaining enterprise-grade web, mobile, and desktop applications for a publicly listed insurance company, supporting internal business operations and customer-facing insurance services.',
       achievements: [
         'Architect and develop customer-facing web applications using React, Next.js, and TypeScript, serving insurance policyholders and internal staff.',
         'Design scalable frontend architectures with reusable component systems, reducing delivery time across feature teams.',
-        'Develop cross-platform mobile applications for iOS and Android using React Native and Flutter.',
+        'Develop cross-platform mobile and desktop applications using React Native, Flutter, and Electron.',
         'Design, develop, and integrate RESTful APIs and third-party services to support enterprise data exchange and interoperability.',
         'Set up and maintain CI/CD pipelines to automate testing and deployment workflows.',
         'Implement secure development practices and contribute to NDPR compliance as a Data Protection Officer.',
         'Work directly with the Head of IT on development processes, architecture decisions, and technology roadmap.',
       ],
-      technologies: ['React', 'Next.js', 'TypeScript', 'React Native', 'Flutter', 'REST APIs', 'CI/CD'],
+      technologies: ['React', 'Next.js', 'TypeScript', 'React Native', 'Flutter', 'Electron', 'REST APIs', 'CI/CD'],
     },
     {
       title: 'Chief Technology Officer',
-      company: 'DevGeeks Tech',
+      company: 'DevGeeks Nexus Ltd',
+      website: 'https://devgeeksnexus.com/',
       location: 'Remote',
       period: '2024 – Present',
-      description: 'Leading technical strategy and overseeing the full software development lifecycle for a distributed agency, delivering enterprise-scale web and mobile products for clients across multiple industries.',
+      description: 'Leading technical strategy and overseeing the full software development lifecycle for a distributed agency, delivering enterprise-scale web, mobile, and desktop products for clients across multiple industries.',
       achievements: [
         'Define system architecture for client projects — selecting appropriate patterns (monolith, microservices, serverless) based on scale and requirements.',
-        'Translate client requirements into scalable, cloud-hosted web and mobile solutions deployed on AWS.',
+        'Translate client requirements into scalable, cloud-hosted web, mobile, and desktop solutions deployed on AWS.',
         'Establish CI/CD pipelines and DevOps standards across all active projects, reducing deployment friction for distributed teams.',
         'Lead and coordinate distributed development teams of 3–8 engineers per engagement, running Agile sprints.',
         'Provide technical consulting on application architecture, infrastructure optimisation, and IT governance strategy.',
@@ -46,11 +47,11 @@ export default function ExperienceModern() {
       company: 'Techbox Labs',
       location: 'Lagos, Nigeria',
       period: '2024 – 2026',
-      description: 'Led end-to-end development of enterprise-scale web and mobile applications across a range of client verticals including e-commerce, fintech, and SaaS platforms.',
+      description: 'Led end-to-end development of enterprise-scale web, mobile, and desktop applications across a range of client verticals including e-commerce, fintech, and SaaS platforms.',
       achievements: [
         'Led architecture and development of a full-stack e-commerce platform with product management, cart, checkout, payment gateway integration, and role-based access control.',
         'Built and maintained customer-facing React/Next.js frontends integrated with Node.js and Apollo GraphQL backends.',
-        'Designed and implemented REST and GraphQL APIs and authentication systems consumed by web and mobile clients.',
+        'Designed and implemented REST and GraphQL APIs and authentication systems consumed by web, mobile, and desktop clients.',
         'Configured and maintained Docker-based deployment environments and contributed to CI/CD pipeline setup.',
         'Worked with MongoDB, PostgreSQL, and MySQL across projects with varying data architecture needs.',
         'Performed code reviews, enforced secure coding standards, and maintained technical documentation.',
@@ -121,7 +122,18 @@ export default function ExperienceModern() {
                       </h3>
                       <div className="flex items-center gap-2 text-slate-300">
                         <FaBriefcase className="text-primary" />
-                        <span className="font-medium">{exp.company}</span>
+                        {exp.website ? (
+                          <a
+                            href={exp.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-medium hover:text-primary transition-colors underline decoration-primary/40 underline-offset-4"
+                          >
+                            {exp.company}
+                          </a>
+                        ) : (
+                          <span className="font-medium">{exp.company}</span>
+                        )}
                         <span className="text-slate-500">·</span>
                         <span className="text-slate-400 text-sm">{exp.location}</span>
                       </div>

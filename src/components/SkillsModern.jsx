@@ -9,8 +9,9 @@ import {
   SiTypescript, SiNextdotjs, SiMongodb, SiPostgresql, SiRedis,
   SiGraphql, SiKubernetes, SiTailwindcss, SiExpress, SiThreedotjs,
   SiSupabase, SiFirebase, SiJavascript, SiMui, SiFlutter,
-  SiLaravel, SiCodeigniter, SiGithubactions
+  SiLaravel, SiCodeigniter, SiGithubactions, SiDotnet, SiRust, SiElectron
 } from 'react-icons/si';
+import { TbBrandCSharp } from 'react-icons/tb';
 
 export default function SkillsModern() {
   const ref = useRef(null);
@@ -32,6 +33,7 @@ export default function SkillsModern() {
         { name: 'Bootstrap', icon: FaBootstrap, level: 90, color: '#7952B3' },
         { name: 'Three.js', icon: SiThreedotjs, level: 85, color: '#000000' },
         { name: 'Flutter', icon: SiFlutter, level: 82, color: '#02569B' },
+        { name: 'Electron', icon: SiElectron, level: 88, color: '#47848F' },
       ],
     },
     {
@@ -39,6 +41,9 @@ export default function SkillsModern() {
       skills: [
         { name: 'Node.js', icon: FaNodeJs, level: 93, color: '#339933' },
         { name: 'Express', icon: SiExpress, level: 100, color: '#000000' },
+        { name: 'C#', icon: TbBrandCSharp, level: 86, color: '#239120' },
+        { name: '.NET', icon: SiDotnet, level: 85, color: '#512BD4' },
+        { name: 'Rust', icon: SiRust, level: 82, color: '#DEA584' },
         { name: 'Python', icon: FaPython, level: 88, color: '#3776AB' },
         { name: 'PHP', icon: FaPhp, level: 85, color: '#777BB4' },
         { name: 'Laravel', icon: SiLaravel, level: 90, color: '#FF2D20' },
