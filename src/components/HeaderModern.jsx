@@ -88,17 +88,20 @@ export default function HeaderModern() {
         }`}
       >
         <nav
-          className="w-full flex items-center justify-between"
           style={{
+            width: '100%',
             maxWidth: '1600px',
             marginLeft: 'auto',
             marginRight: 'auto',
-            paddingLeft: 'max(32px, calc((100vw - 1600px) / 2))',
-            paddingRight: 'max(32px, calc((100vw - 1600px) / 2))',
+            paddingLeft: 'max(16px, calc((100vw - 1600px) / 2))',
+            paddingRight: 'max(16px, calc((100vw - 1600px) / 2))',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
           }}
         >
           {/* Brand Logo & Status */}
-          <div className="flex items-center gap-3">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <motion.a
               href="#home"
               onClick={(e) => handleNavClick(e, '#home')}
@@ -120,11 +123,10 @@ export default function HeaderModern() {
             </span>
           </div>
 
-          {/* Desktop Navigation with Animated Pill */}
+          {/* Desktop Navigation with Animated Pill (Hidden on Mobile) */}
           <div
-            className="hidden md:flex items-center"
+            className="desktop-nav-pill items-center"
             style={{
-              display: 'flex',
               alignItems: 'center',
               gap: '4px',
               padding: '5px 8px',
@@ -184,11 +186,10 @@ export default function HeaderModern() {
             })}
           </div>
 
-          {/* Right Action Buttons */}
+          {/* Right Action Buttons (Hidden on Mobile) */}
           <div
-            className="hidden md:flex items-center"
+            className="desktop-nav-actions items-center"
             style={{
-              display: 'flex',
               alignItems: 'center',
               gap: '12px',
             }}
@@ -241,13 +242,24 @@ export default function HeaderModern() {
             </motion.a>
           </div>
 
-          {/* Mobile Menu Trigger Button */}
+          {/* Mobile Menu Trigger Button (Visible on Mobile only) */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden w-10 h-10 rounded-xl glass-effect flex items-center justify-center text-slate-200 hover:text-white transition-colors border border-white/10"
+            className="mobile-menu-trigger rounded-xl glass-effect"
+            style={{
+              width: '42px',
+              height: '42px',
+              borderRadius: '12px',
+              alignItems: 'center',
+              justifyContent: 'center',
+              background: 'rgba(255, 255, 255, 0.06)',
+              border: '1px solid rgba(255, 255, 255, 0.12)',
+              color: '#ffffff',
+              cursor: 'pointer',
+            }}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <FaTimes className="text-lg" /> : <FaBars className="text-lg" />}
+            {isMobileMenuOpen ? <FaTimes style={{ fontSize: '18px' }} /> : <FaBars style={{ fontSize: '18px' }} />}
           </button>
         </nav>
 

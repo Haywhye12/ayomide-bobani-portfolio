@@ -91,3 +91,28 @@ section:not(:last-of-type)::after {
   background: linear-gradient(90deg, transparent, rgba(14, 165, 233, 0.3), rgba(139, 92, 246, 0.3), transparent);
   box-shadow: 0 0 20px rgba(14, 165, 233, 0.2);
 }
+
+/* Responsive Navbar Controls */
+.desktop-nav-pill {
+  display: none !important;
+}
+
+.desktop-nav-actions {
+  display: none !important;
+}
+
+.mobile-menu-trigger {
+  display: flex !important;
+}
+
+@media (min-width: 768px) {
+  .desktop-nav-pill {
+    display: flex !important;
+  }
+  .desktop-nav-actions {
+    display: flex !important;
+  }
+  .mobile-menu-trigger {
+    display: none !important;
+  }
+}
