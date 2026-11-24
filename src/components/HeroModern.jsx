@@ -105,7 +105,7 @@ export default function HeroModern() {
             className="flex gap-6 md:gap-8 justify-center"
           >
             {[
-              { icon: FaGithub, href: 'https://github.com/Haywhyte12', label: 'GitHub' },
+              { icon: FaGithub, href: 'https://github.com/haywhye12', label: 'GitHub' },
               { icon: FaLinkedin, href: 'https://www.linkedin.com/in/ayomide-bobani-a76247360/', label: 'LinkedIn' },
               { icon: FaEnvelope, href: '#contact', label: 'Email' },
             ].map((social, index) => (

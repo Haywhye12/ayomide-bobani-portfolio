@@ -12,7 +12,7 @@ export default function FooterModern() {
   ];
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com/Haywhyte12' },
+    { icon: FaGithub, href: 'https://github.com/haywhye12' },
     { icon: FaLinkedin, href: 'https://www.linkedin.com/in/ayomide-bobani-a76247360/' },
     { icon: FaEnvelope, href: 'mailto:ayomidebobani@gmail.com' },
   ];

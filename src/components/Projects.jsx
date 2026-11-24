@@ -13,7 +13,7 @@ const Projects = () => {
       technologies: ["React.js", "Next.js", "Node.js", "Express.js", "PostgreSQL", "JWT", "AI Integration"],
       image: aiPromptImage,
       liveLink: "https://ai-prompt-to-image-converter.onrender.com",
-      githubLink: "https://github.com/Haywhye12/AI-Prompt-to-Image-Converter"
+      githubLink: "https://github.com/haywhye12/AI-Prompt-to-Image-Converter"
     },
     {
       title: "Estate Community Management App",
@@ -21,7 +21,7 @@ const Projects = () => {
       technologies: ["React.js", "TypeScript", "Firebase", "Node.js", "Express.js", "Real-time Database"],
       image: estateAppImage,
       liveLink: "#",
-      githubLink: "https://github.com/Haywhye12/Manager"
+      githubLink: "https://github.com/haywhye12/Manager"
     },
     {
       title: "Professional Portfolio & Client Websites",
@@ -29,7 +29,7 @@ const Projects = () => {
       technologies: ["HTML5", "CSS3", "JavaScript", "jQuery", "React.js", "Responsive Design"],
       image: heroBg,
       liveLink: "https://my-portfolio-website-one-gamma.vercel.app/",
-      githubLink: "https://github.com/Haywhye12/MyPortfolioWebsite"
+      githubLink: "https://github.com/haywhye12/MyPortfolioWebsite"
     }
   ];
 

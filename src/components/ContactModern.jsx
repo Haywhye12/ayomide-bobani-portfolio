@@ -18,7 +18,7 @@ export default function ContactModern() {
       icon: FaEnvelope,
       title: 'Email',
       value: 'ayomidebobani@gmail.com',
-      link: 'mailto:ayomidebobani@.com',
+      link: 'mailto:ayomidebobani@gmail.com',
     },
     {
       icon: FaPhone,
@@ -46,13 +46,48 @@ export default function ContactModern() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    
-    // Simulate form submission
-    setTimeout(() => {
+
+    try {
+      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+      if (accessKey) {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify({
+            access_key: accessKey,
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject || `Portfolio Message from ${formData.name}`,
+            message: formData.message,
+          }),
+        });
+        const result = await response.json();
+        if (result.success) {
+          setStatus('success');
+          setFormData({ name: '', email: '', subject: '', message: '' });
+          setTimeout(() => setStatus(''), 5000);
+          return;
+        }
+      }
+
+      // Direct mailto fallback with prefilled message
+      const subject = encodeURIComponent(formData.subject || `Portfolio Message from ${formData.name}`);
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      );
+      window.location.href = `mailto:ayomidebobani@gmail.com?subject=${subject}&body=${body}`;
+
       setStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setStatus(''), 3000);
-    }, 1500);
+      setTimeout(() => setStatus(''), 5000);
+    } catch (err) {
+      console.error('Contact submit error:', err);
+      setStatus('error');
+      setTimeout(() => setStatus(''), 5000);
+    }
   };
 
   return (

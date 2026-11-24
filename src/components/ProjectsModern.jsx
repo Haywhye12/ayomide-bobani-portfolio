@@ -14,7 +14,7 @@ export default function ProjectsModern() {
       description: 'Enterprise-scale, customer-facing community management platform for residential estates. Features role-based access control for residents, guards, and admins, real-time visitor tracking, and management reporting.',
       image: estatePic,
       tags: ['React', 'Node.js', 'MongoDB', 'Express', 'REST APIs'],
-      github: 'https://github.com/Haywhyte12',
+      github: 'https://github.com/haywhye12',
       live: 'https://permit.com.ng',
       featured: true,
     },
@@ -23,8 +23,8 @@ export default function ProjectsModern() {
       description: 'Full-stack AI application with user authentication, AI-powered image generation, and a personal generation history dashboard — designed for scalable, concurrent multi-user access.',
       image: aiPromptPic,
       tags: ['React', 'Node.js', 'OpenAI', 'Express', 'MongoDB'],
-      github: 'https://github.com/Haywhyte12',
-      live: 'https://github.com/Haywhyte12',
+      github: 'https://github.com/haywhye12',
+      live: 'https://github.com/haywhye12',
       featured: true,
     },
     {
@@ -32,8 +32,8 @@ export default function ProjectsModern() {
       description: 'Scalable customer-facing e-commerce application with product management, shopping cart, checkout flow, payment gateway integration, and role-based access control for admins and customers.',
       image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80',
       tags: ['React', 'Node.js', 'MongoDB', 'Express', 'Payments'],
-      github: 'https://github.com/Haywhyte12',
-      live: 'https://github.com/Haywhyte12',
+      github: 'https://github.com/haywhye12',
+      live: 'https://github.com/haywhye12',
       featured: true,
     },
     {
@@ -41,24 +41,24 @@ export default function ProjectsModern() {
       description: 'Enterprise KPI platform built around approval workflows, multi-level data validation, accountability chains, and full audit trails — architected for regulatory and governance requirements.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
       tags: ['React', 'Node.js', 'PostgreSQL', 'Express', 'REST APIs'],
-      github: 'https://github.com/Haywhyte12',
-      live: 'https://github.com/Haywhyte12',
+      github: 'https://github.com/haywhye12',
+      live: 'https://github.com/haywhye12',
     },
     {
       title: 'AI Chat Application',
       description: 'Real-time conversational AI application with natural language processing, multi-turn context handling, and a cloud-deployed backend architected for concurrent user scale.',
       image: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&q=80',
       tags: ['React', 'Node.js', 'Socket.io', 'OpenAI', 'Express'],
-      github: 'https://github.com/Haywhyte12',
-      live: 'https://github.com/Haywhyte12',
+      github: 'https://github.com/haywhye12',
+      live: 'https://github.com/haywhye12',
     },
     {
       title: 'Blockchain Marketplace Platform',
       description: 'Decentralised customer-facing marketplace with smart contract-based transactions, cryptocurrency wallet connectivity, and on-chain asset management for trustless commerce.',
       image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80',
       tags: ['React', 'Solidity', 'Web3.js', 'Ethereum', 'IPFS'],
-      github: 'https://github.com/Haywhyte12',
-      live: 'https://github.com/Haywhyte12',
+      github: 'https://github.com/haywhye12',
+      live: 'https://github.com/haywhye12',
     },
   ];
 
@@ -188,7 +188,7 @@ export default function ProjectsModern() {
           className="text-center mt-12"
         >
           <a
-            href="https://github.com/Haywhyte12"
+            href="https://github.com/haywhye12"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 glass-effect hover:bg-white/10 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
